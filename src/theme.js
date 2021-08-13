@@ -5,7 +5,8 @@ export const theme = {
       text: "#330000",
       "second-text": "rgba(51, 0, 0, 0.65)",
       white: "#fff",
-      shade: "#FF0020"
+      shade: "rgba(255, 0, 32, 1)",
+      "sm-shade": "rgba(255, 0, 32, .45)"
     },
     breakpoints: {
       "l-screen": "1366px",

@@ -5,6 +5,7 @@ import { useState } from "react";
 import styled from 'styled-components'
 import { ListNav } from "components/ListNav";
 import { motion } from 'framer-motion'
+import { SocialMedias } from 'components/SocialMedias'
 
 const Container = styled.span`
     display: none;
@@ -47,8 +48,9 @@ export const MobileDrawer = () => {
                 <motion.div initial={{x: '-100'}} animate={{x: 0}} exit={{x: -100, opacity: 0}} className="mobile-menu">
                     <div className="close" onClick={() => setIsOpen((prevState) => !prevState)}>
                         <IoClose size="24px" />
-                    </div>
+                    </div>s
                     <ListNav isMobile/>
+                    <SocialMedias/>
                 </motion.div>
             )}
         </Container>

@@ -26,7 +26,7 @@ export const SocialMedias= () => {
     return (
         <Container>
             {social.map((item, i) => (
-                <div className="social">
+                <div className="social" key={i}>
                     <Link href={item.href}>
                         <a>
                             {item.icon}

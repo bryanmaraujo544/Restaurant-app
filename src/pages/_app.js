@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle `
       border: none;
       box-sizing: border-box;
       list-style: none;
+      text-decoration: none;
     }
     
     html {
@@ -24,6 +25,15 @@ const GlobalStyle = createGlobalStyle `
       max-width: 100vw;
       font-family: 'Poppins', sans-serif;
       background: ${theme.colors.background};
+      padding: 0 128px;
+
+      @media screen and (max-width: 1366px){
+        padding: 0px 64px;
+      }
+
+      @media screen and (max-width: 768px){
+          padding: 0px 32px;
+      }
     }
 `
 
