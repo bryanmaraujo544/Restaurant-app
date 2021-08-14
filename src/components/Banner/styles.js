@@ -4,13 +4,25 @@ export const Container = styled.section`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     height: 100%;
+
+    @media screen and (max-width: ${props => props.theme.breakpoints["tablet"]}){
+        grid-template-columns: 1fr;
+    }
     
     .content{
         display: flex;
         align-items: center;
-        height: 100%;
         
+        height: 100%;
         padding: 0px;
+        grid-column: 1 / 2;
+    }
 
+    .images{
+        grid-column: 2 / 3;
+
+        @media screen and (max-width: ${props => props.theme.breakpoints["tablet"]}){
+            grid-column: 1 / 2;
+        }
     }
 `

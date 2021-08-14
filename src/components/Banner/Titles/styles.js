@@ -2,24 +2,39 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
     display: flex;
-    gap: 16px;
+    gap: 20px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+
+    @media screen and (max-width: ${props => props.theme.breakpoints["tablet"]}){
+        align-items: center;
+        text-align: center;
+    }
 
     .buttons{
         display: flex;
     }
 
     .uptitle{
-        text-decoration: uppercase;
-        color: ${props => props.theme.colors['second-text']};
-        font-size: 1.7rem;
+        text-transform: uppercase;
+        border-radius: 9999px;
+        color: ${props => props.theme.colors["second-text"]};
+        font-size: 1.6rem;
+        margin-bottom: -12px;
     }
 
     h1{
         font-size: 5.2rem;
         line-height: 1.25;
+
+        @media screen and (max-width: ${props => props.theme.breakpoints["tablet"]}){
+            font-size: 4.8rem;
+        }
+
+        @media screen and (max-width: ${props => props.theme.breakpoints["mobile"]}){
+            font-size: 4.2rem;
+        }
     }
 
     h2{
@@ -28,5 +43,8 @@ export const Container = styled.div`
         color: ${props => props.theme.colors['second-text']};
         max-width: 80%;
         font-weight: 400;
+        margin-bottom: 12px;
     }
+
+
 `
