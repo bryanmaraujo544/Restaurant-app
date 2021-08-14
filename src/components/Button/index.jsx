@@ -3,12 +3,14 @@ import Link from 'next/link'
 
 export const Button = ({
     second,
-    text
+    text, 
+    small,
+    link
 }) => {
     return (
         <Container>
-            <Link href="/">
-                <a className={`button ${second ? 'second' : ''}`}>
+            <Link href={link}>
+                <a className={`button ${second ? 'second' : ''} ${small ? 'small' : ''}`}>
                     {text}
                 </a>
             </Link>

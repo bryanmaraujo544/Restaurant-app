@@ -38,5 +38,11 @@ export const Container= styled.span`
                 color: ${props => props.theme.colors.shade};
             }
         }
+
+        &.small {
+            padding: 7px 28px;
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
     }
 `

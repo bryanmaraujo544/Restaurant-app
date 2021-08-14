@@ -1,5 +1,5 @@
 import { Container } from './styles'
-import { Button } from '../Button'
+import { Button } from '../../Button'
 
 
 export const Titles = ({
@@ -14,8 +14,8 @@ export const Titles = ({
             <h1>{title}</h1>
             <h2>{description}</h2>
             <div className="buttons">
-                <Button text="Ver unidades"/>
-                <Button second text="Sobre"/>
+                <Button text="Ver unidades" link="/"/>
+                <Button second text="Sobre" link="/" />
             </div>
             
         </Container>

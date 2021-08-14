@@ -15,6 +15,8 @@ export const Container = styled.div`
         margin-top: 72px;
     }
 
+
+
     /* Circle wich is backward of the images of the foods */
     &:before{
         content: '';
@@ -37,7 +39,15 @@ export const Container = styled.div`
             height: 400px;
         }
     }
+    @keyframes ola {
+        from {
+            opacity: 0;
+        }
 
+        to {
+            opacity: 1;
+        }
+    }
     .image{
         width: 80%;
         img{
@@ -52,6 +62,8 @@ export const Container = styled.div`
             @media screen and (max-width: ${props => props.theme.breakpoints.mobile}){
                 width: 300px;
             }
+
+            animation: ola 1s;
         }
     }
 

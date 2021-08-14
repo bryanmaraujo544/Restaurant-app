@@ -23,6 +23,7 @@ const GlobalStyle = createGlobalStyle `
 
     body{
       max-width: 100vw;
+      height: 100%;
       font-family: 'Poppins', sans-serif;
       background: ${theme.colors.background};
       padding: 0 128px;

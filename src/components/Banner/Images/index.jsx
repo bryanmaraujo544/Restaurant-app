@@ -43,6 +43,7 @@ export const Images = () => {
                     height={300}
                     objectFit="cover"
                     alt={active.text}
+                    className="image-big"
                 />
             </motion.div>
             <div className="buttons">
