@@ -1,8 +1,8 @@
 import { Container } from './styles'
 import Link from 'next/link'
 import { Titles } from './Titles'
-
-
+import { Images } from './Images'
+ 
 export const Banner = ({title, description, uptitle, home}) => {
     return (
         <Container>
@@ -13,6 +13,9 @@ export const Banner = ({title, description, uptitle, home}) => {
                     description="Nossas delícias são feitas com toda dedicação e um cuidado artesanal que transformarão seu conceito culinário"
                     uptitle="padaria e restaurante"
                 />
+            </div>
+            <div className="images">
+                <Images />
             </div>
         </Container>
     )

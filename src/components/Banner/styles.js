@@ -5,7 +5,7 @@ export const Container = styled.section`
     grid-template-columns: repeat(2, 1fr);
     height: 100%;
 
-    @media screen and (max-width: ${props => props.theme.breakpoints["tablet"]}){
+    @media screen and (max-width: 966px){
         grid-template-columns: 1fr;
     }
     
@@ -21,7 +21,7 @@ export const Container = styled.section`
     .images{
         grid-column: 2 / 3;
 
-        @media screen and (max-width: ${props => props.theme.breakpoints["tablet"]}){
+        @media screen and (max-width: 966px){
             grid-column: 1 / 2;
         }
     }

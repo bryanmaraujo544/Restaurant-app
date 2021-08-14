@@ -7,7 +7,7 @@ export const Container = styled.div`
     justify-content: center;
     align-items: flex-start;
 
-    @media screen and (max-width: ${props => props.theme.breakpoints["tablet"]}){
+    @media screen and (max-width: 966px){
         align-items: center;
         text-align: center;
     }
@@ -27,6 +27,11 @@ export const Container = styled.div`
     h1{
         font-size: 5.2rem;
         line-height: 1.25;
+
+        @media screen and (min-width: ${props => props.theme.breakpoints["sm-screen"]}){
+            font-size: 5.6rem;
+            width: 100%;
+        }
 
         @media screen and (max-width: ${props => props.theme.breakpoints["tablet"]}){
             font-size: 4.8rem;
