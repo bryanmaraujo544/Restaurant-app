@@ -25,6 +25,8 @@ const social = [
 export const SocialMedias= () => {
     return (
         <Container>
+            <div className="social-medias">
+
             {social.map((item, i) => (
                 <div className="social" key={i}>
                     <Link href={item.href}>
@@ -34,6 +36,7 @@ export const SocialMedias= () => {
                     </Link>
                 </div>
             ))}
+            </div>
         </Container>
     )
 }

@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
+    position: relative;
+    height: 100%;
     display: flex;
     align-items: center;
-    height: 100%;
-    position: relative;
     
 
     @media screen and (max-width: 966px){
@@ -12,20 +12,22 @@ export const Container = styled.div`
     }
 
     @media screen and (max-width: ${props => props.theme.breakpoints.mobile}){
-        margin-top: 0px;
+        margin-top: 72px;
     }
+
+    /* Circle wich is backward of the images of the foods */
     &:before{
         content: '';
-        width: 500px;
-        height: 500px;
-        border-radius: 50%;
-        background: ${props => props.theme.colors.secondary};
         position: absolute;
         left: -25px;
         bottom: 50%;
+        width: 500px;
+        height: 500px;
+        background: ${props => props.theme.colors.secondary};
+        border-radius: 50%;
         transform: translateY(50%);
 
-        @media screen and (min-width: ${props => props.theme.breakpoints["sm-screen"]}){
+        @media screen and (min-width: ${props => props.theme.breakpoints["l-screen"]}){
             height: 600px;
             width: 600px
         }
@@ -43,7 +45,7 @@ export const Container = styled.div`
             border-radius: 50%50%;
             object-fit: cover;
 
-            @media screen and (min-width: ${props => props.theme.breakpoints["sm-screen"]}){
+            @media screen and (min-width: ${props => props.theme.breakpoints["l-screen"]}){
                 width: 500px
             }
 
@@ -53,20 +55,25 @@ export const Container = styled.div`
         }
     }
 
+    /* div of the buttons wich is resposible to switch food images */
     .buttons{
         position: relative;
         right: 0;
+        width: 30%;
         display: flex;
         flex-direction: column;
         z-index: 2;
-        width: 25%;
 
-        @media screen and (max-width: ${props => props.theme.breakpoints["l-screen"]}){
+        @media screen and (min-width: ${props => props.theme.breakpoints["l-screen"]}){
             width: 35%;
         }
 
         @media screen and (max-width: 966px){
             width: 35%;
+        }
+
+        @media screen and (max-width: ${props => props.theme.breakpoints.mobile}){
+            width: 40%;
         }
         .button{
             background: #fff;
@@ -74,13 +81,12 @@ export const Container = styled.div`
             justify-content: flex-start;
             align-items: center;
             width: 100%;
-            
             padding: 8px;
             border-radius: 9999px;
 
             cursor: pointer;
             
-            @media screen and (min-width: ${props => props.theme.breakpoints["sm-screen"]}){
+            @media screen and (min-width: ${props => props.theme.breakpoints["l-screen"]}){
                 padding: 12px;
             }
             
@@ -99,6 +105,11 @@ export const Container = styled.div`
                     width: 42px;
                     height: 42px;
                 }
+
+                @media screen and (max-width: ${props => props.theme.breakpoints.mobile}){
+                    width: 20px;
+                    height: 20px;
+                }
             }
 
             p {
@@ -108,6 +119,10 @@ export const Container = styled.div`
 
                 @media screen and (min-width: ${props => props.theme.breakpoints["sm-screen"]}){
                     font-size: 1.5rem;
+                }
+
+                @media screen and (max-width: ${props => props.theme.breakpoints.mobile}){
+                    font-size: 1.3rem;
                 }
             }
 

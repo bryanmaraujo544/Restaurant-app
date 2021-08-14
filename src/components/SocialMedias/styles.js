@@ -1,7 +1,10 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-    display: flex;
+    .social-medias{
+        display: flex;
+        
+    }
     
     .social{
         & + .social {

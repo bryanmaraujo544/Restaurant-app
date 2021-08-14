@@ -10,7 +10,7 @@ export const theme = {
       "sm-shade": "rgba(255, 0, 32, .45)"
     },
     breakpoints: {
-      "l-screen": "1366px",
+      "l-screen": "1466px",
       "sm-screen": "1024px",
       "tablet": "768px",
       "mobile": "480px"

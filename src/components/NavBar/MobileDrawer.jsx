@@ -16,13 +16,17 @@ const Container = styled.span`
         cursor: pointer;
     }
     .mobile-menu{
+        position: relative;
         background: #ffff !important;
         padding: 128px 48px;
         width: 80vw;
         height: 100vh;
         position: fixed;
+        flex-direction: column;
+        align-items: space-between;
         left: 0;
         top: 0;
+        bottom: 0;
 
         .close{
             position: absolute;
@@ -30,6 +34,13 @@ const Container = styled.span`
             right: 32px;
             cursor: pointer;
         }
+
+        .social-medias{
+            position: absolute;
+            bottom: 32px;
+        }
+
+
     }
 `
 

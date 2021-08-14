@@ -2,10 +2,12 @@ import { Container } from './styles'
 import Link from 'next/link'
 import { Titles } from './Titles'
 import { Images } from './Images'
+import { Grain } from 'components/Grain'
  
 export const Banner = ({title, description, uptitle, home}) => {
     return (
         <Container>
+            <Grain/>
             <div className="content">
                 <Titles
                     home
