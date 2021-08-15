@@ -10,13 +10,14 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
 
-
+    @media screen and (max-width: ${props => props.theme.breakpoints["sm-screen"]}){
+        min-width: 300px;
+    }
 
     .image{
         width: 100%;
         
         img{    
-           
             object-fit: cover;
             width: 100% !important;
             height: 100%;

@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Header } from 'sections/Header'
-import { Unities } from 'sections/Unities'
+
+import { Header, Unities, Services } from 'sections'
+
 
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
     <>
       <Header />
       <Unities />
+      <Services/>
     </>
   )
 }
