@@ -48,7 +48,7 @@ export const Services = () => {
                 </p>
                 <div className="boxes">
                     {boxesData.map((box, i) => (
-                        <div className="box">
+                        <div className="box" key={i}>
                             <div className="icon">
                                 <Image 
                                     src={box.icon}

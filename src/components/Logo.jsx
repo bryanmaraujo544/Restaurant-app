@@ -18,7 +18,13 @@ export const Logo = () => {
     return (
         <Container>
         <Link to="/" duration={500}>
-            <Image src="/logo.png" width={658} height={379} objectFit="contain"/>
+            <Image 
+                src="/logo.png" 
+                width={658} 
+                height={379} 
+                objectFit="contain"
+                alt="Logo Revista Famosas"
+            />
         </Link>
         </Container>
     )

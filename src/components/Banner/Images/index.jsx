@@ -61,6 +61,7 @@ export const Images = () => {
                             width={32}
                             height={32}
                             objectFit="cover"
+                            alt={button.text}
                         />
                         <p>{button.text}</p>
                     </motion.div>
