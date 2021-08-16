@@ -6,6 +6,10 @@ export const Container = styled.h3`
     display: inline;
     margin-bottom: 32px;
 
+    @media screen and (max-width: ${props => props.theme.breakpoints["mobile"]}){
+        font-size: 3.2rem;           
+    }
+
     &:after{
         content: '';
         height: 4px;
