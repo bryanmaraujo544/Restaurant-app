@@ -25,14 +25,11 @@ const GlobalStyle = createGlobalStyle `
     }
     
     body{
-      position: relative;
-      left: 50%;
-      transform: translateX(-50%);
       max-width: 100vw;
       background-color: red;
       height: 100%;
       font-family: 'Poppins', sans-serif;
-      
+      overflow-x: hidden;
 
       
 
