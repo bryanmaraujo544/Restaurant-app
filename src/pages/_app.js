@@ -26,7 +26,7 @@ const GlobalStyle = createGlobalStyle `
     
     body{
       max-width: 100vw;
-      background-color: red;
+      background-color: #fffafa;
       height: 100%;
       font-family: 'Poppins', sans-serif;
       overflow-x: hidden;

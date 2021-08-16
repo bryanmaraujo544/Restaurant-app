@@ -6,6 +6,7 @@ export const Container = styled.section`
     height: 100%;
     position: relative;
     z-index: 4;
+    
 
     @media screen and (max-width: 966px){
         grid-template-columns: 1fr;

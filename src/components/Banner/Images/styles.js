@@ -5,7 +5,7 @@ export const Container = styled.div`
     height: 100%;
     display: flex;
     align-items: center;
-    
+ 
 
     @media screen and (max-width: 966px){
         margin-top: 64px;
@@ -32,12 +32,14 @@ export const Container = styled.div`
 
         @media screen and (min-width: ${props => props.theme.breakpoints["l-screen"]}){
             height: 600px;
-            width: 600px
+            width: 600px;
         }
 
         @media screen and (max-width: ${props => props.theme.breakpoints.mobile}){
-            width: 400px;
-            height: 400px;
+            width: 300px;
+            max-width: 100%;
+            height: 300px;
+            left: 0;
         }
     }
     @keyframes ola {
