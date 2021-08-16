@@ -15,7 +15,8 @@ export const Container= styled.span`
         box-shadow: 0px 3px 12px ${props => props.theme.colors["sm-shade"]};
         border: 3px solid ${props => props.theme.colors.primary};
         transition: .25s ease;
-
+        cursor: pointer;
+        
         @media screen and (max-width: ${props => props.theme.breakpoints["mobile"]}){
             padding: 10px 36px;
         }

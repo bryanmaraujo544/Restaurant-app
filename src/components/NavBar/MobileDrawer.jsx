@@ -9,7 +9,7 @@ import { SocialMedias } from 'components/SocialMedias'
 const Container = styled.span`
     display: none;
     z-index: 111;
-    @media screen and (max-width: ${props => props.theme.breakpoints["mobile"]}){
+    @media screen and (max-width: ${props => props.theme.breakpoints.tablet}){
         display: block;
     }
     .open{
@@ -50,7 +50,7 @@ export const MobileDrawer = () => {
         <Container>
             {!isOpen && (
                 <div className="open">
-                    <IoMdMenu size="24px" onClick={() => setIsOpen((prevState) => !prevState)}/>    
+                    <IoMdMenu size="26px" onClick={() => setIsOpen((prevState) => !prevState)}/>    
                 </div>
             )
             }
@@ -58,7 +58,7 @@ export const MobileDrawer = () => {
                 <motion.div initial={{x: '-100'}} animate={{x: 0}} exit={{x: -100, opacity: 0}} className="mobile-menu">
                     <div className="close" onClick={() => setIsOpen((prevState) => !prevState)}>
                         <IoClose size="24px" />
-                    </div>s
+                    </div>
                     <ListNav isMobile/>
                     <SocialMedias/>
                 </motion.div>

@@ -14,8 +14,8 @@ export const Titles = ({
             <h1>{title}</h1>
             <h2>{description}</h2>
             <div className="buttons">
-                <Button text="Ver unidades" link="/"/>
-                <Button second text="Sobre" link="/" />
+                <Button text="Ver unidades" link="unities"/>
+                <Button second text="Sobre" link="about" />
             </div>
             
         </Container>

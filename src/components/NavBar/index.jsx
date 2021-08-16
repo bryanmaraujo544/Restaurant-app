@@ -15,8 +15,8 @@ export const NavBar = () => {
   return (
     <Container>
       <MobileDrawer />
-      <Logo/>
-      <ListNav/>
+      <Logo />
+      <ListNav />
       <SocialMedias />
     </Container>
   )

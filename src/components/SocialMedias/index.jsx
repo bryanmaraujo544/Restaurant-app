@@ -1,7 +1,10 @@
+import { useState } from 'react'
 import { FaInstagram, FaFacebookF, FaWhatsapp } from 'react-icons/fa'
 import { SiIfood } from 'react-icons/si'
 import Link from 'next/link'
 import { Container } from './styles'
+import { AiTwotonePhone } from 'react-icons/ai'
+import { motion } from 'framer-motion'
 
 const social = [
     {
@@ -23,20 +26,51 @@ const social = [
   ]
 
 export const SocialMedias= () => {
+    const [isPhoneOpen, setIsPhoneOpen] = useState(false)
     return (
         <Container>
-            <div className="social-medias">
+            <AiTwotonePhone 
+                className="phone"
+                size={26}
+                onClick={() => setIsPhoneOpen((prevState) => !prevState)}
+            />
+            <motion.div 
+                className={`social-medias`}
+                initial={{y: 0}}
+                animate={{y:0}}
+                duration={500}
+                
+            >
+                {social.map((item, i) => (
+                    <div className={`social `} key={i} >
+                        <Link href={item.href}>
+                            <a >
+                                {item.icon}
+                            </a>
+                        </Link>
+                    </div>
+                ))}
+            </motion.div>
 
-            {social.map((item, i) => (
-                <div className="social" key={i}>
-                    <Link href={item.href}>
-                        <a>
-                            {item.icon}
-                        </a>
-                    </Link>
-                </div>
-            ))}
-            </div>
+            {isPhoneOpen && 
+                <motion.div 
+                    className={`social-medias ${isPhoneOpen ? 'open' : ''}`}
+                    initial={{y: -100, opacity: 0}}
+                    animate={{y:0, opacity: 1}}
+                    
+                >
+                    {social.map((item, i) => (
+                        <div className={`social `} key={i} >
+                            <Link href={item.href}>
+                                <a className={`${isPhoneOpen ? 'open' : ''}`}>
+                                    {item.icon}
+                                </a>
+                            </Link>
+                        </div>
+                    ))}
+                </motion.div>
+            
+            }
         </Container>
     )
 }

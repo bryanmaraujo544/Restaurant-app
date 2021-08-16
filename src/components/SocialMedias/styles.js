@@ -1,8 +1,34 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
+    position: relative;
+    .phone {
+        display: none;
+
+        @media screen and (max-width: ${props => props.theme.breakpoints["tablet"]}){
+            display: inline-block;       
+        }
+    }
     .social-medias{
         display: flex;
+
+        @media screen and (max-width: ${props => props.theme.breakpoints["tablet"]}){
+            display: flex;
+            flex-direction: column;
+
+            &.open {
+                display: flex;
+                position: absolute;
+                right: -8px;
+                top: 32px;
+                z-index: 7;
+                background: #fff;
+                border-radius: 9999px;
+                padding: 8px;
+            }
+        }
+
+
         
     }
     
@@ -10,15 +36,12 @@ export const Container = styled.div`
         & + .social {
             margin-left: 8px;
 
-            @media screen and (max-width: ${props => props.theme.breakpoints["mobile"]}){
-                margin-left: 4px;
+            @media screen and (max-width: ${props => props.theme.breakpoints.tablet}){
+                margin-top: 4px;
+                margin-left: 0;
             }
         }
         a{
-            @media screen and (max-width: ${props => props.theme.breakpoints["mobile"]}){
-                font-size: 14px;
-                padding: 5px;
-            }
             font-size: 18px;
             display: flex;
             align-items: center;
@@ -28,6 +51,23 @@ export const Container = styled.div`
             border-radius: 50%;
             color: ${props => props.theme.colors.primary};
             filter: drop-shadow(0 1px 4px rgba(255, 0, 32, .15));
+            
+            @media screen and (max-width: ${props => props.theme.breakpoints["mobile"]}){
+                font-size: 14px;
+                padding: 5px;
+            }
+
+            @media screen and (max-width: ${props => props.theme.breakpoints.tablet}){
+                display: none;
+
+                &.open {
+                    display: flex;
+                }
+            }
         }
+
+ 
+
+        
     }
 `
