@@ -15,6 +15,8 @@ const GlobalStyle = createGlobalStyle `
     
     html {
       font-size: 62.5%;
+      width: 100vw;
+      max-width: 100vw;
       @media(max-width: 768px){
         font-size: 8px;
       }
@@ -24,15 +26,9 @@ const GlobalStyle = createGlobalStyle `
     body{
       width: 100%;
       overflow-x: hidden;
-      max-width: 100vw;
-     
-    
       margin: 0 auto;
-   
-      
       height: 100%;
       font-family: 'Poppins', sans-serif;
-      
       padding: 0 128px;
 
       @media screen and (max-width: 1366px){
