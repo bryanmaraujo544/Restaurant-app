@@ -3,5 +3,6 @@ import { Unities } from "./Unities";
 import { Services } from "./Services";
 import { About } from "./About";
 import { DownloadApp } from "./DownloadApp";
+import { Footer } from "./Footer";
 
-export { Header, Unities, Services, About, DownloadApp }
+export { Header, Unities, Services, About, DownloadApp, Footer }

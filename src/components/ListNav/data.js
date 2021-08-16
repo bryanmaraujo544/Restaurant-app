@@ -6,15 +6,15 @@ export const listNav = [
     },
     {
         label: "Unidades",
-        path: "unidades"
+        path: "unities"
     },
     {
         label: "Sobre",
-        path: "sobre"
+        path: "about"
     },
     {
         label: "Contato",
-        path: "contato"
+        path: "contact"
     },
 ]
 

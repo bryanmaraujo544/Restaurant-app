@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 
-import { Header, Unities, Services, About, DownloadApp } from 'sections'
+import { Header, Unities, Services, About, DownloadApp, Footer } from 'sections'
 
 
 
@@ -13,6 +13,7 @@ export default function Home() {
       <Services/>
       <About />
       <DownloadApp />
+      <Footer />
     </>
   )
 }

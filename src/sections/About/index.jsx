@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export const About = () => {
     return (
-        <Container>
+        <Container id="about">
             <div className="text">
                 <h4 className="title">
                     Conheça um pouco da nossa história
