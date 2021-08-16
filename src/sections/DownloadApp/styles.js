@@ -4,7 +4,7 @@ export const Container = styled.section`
     
     margin-top: 19.6rem;
     height: 400px;
-    width: 100%;
+    width: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -19,6 +19,18 @@ export const Container = styled.section`
 
     @media screen and (max-width: ${props => props.theme.breakpoints.tablet}){
         margin-top: 12.8rem;
+    }
+
+    @media screen and (max-width: 1366px){
+        margin: 19.6rem 64px;
+    }
+
+    @media screen and (max-width: 768px){
+        margin: 128px 32px;
+    }
+
+    @media screen and (max-width: 480px){
+        margin: 64px 24px;
     }
 
     .content {

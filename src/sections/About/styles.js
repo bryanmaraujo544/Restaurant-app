@@ -4,10 +4,26 @@ export const Container = styled.section`
     display: flex;
     flex-wrap: wrap;
     height: 700px;
-    width: 100%;
+   
     margin-top: 128px;
     border-radius: 48px;
     background: ${props => props.theme.colors.primary};
+
+    @media screen and (max-width: 966px){
+        height: auto;
+    }
+    
+    @media screen and (max-width: 1366px){
+        margin: 128px 64px;
+    }
+
+    @media screen and (max-width: 768px){
+        margin: 128px 32px;
+    }
+
+    @media screen and (max-width: 480px){
+        margin: 128px 24px;
+    }
 
     @media screen and (max-width: ${props => props.theme.breakpoints["sm-screen"]}){
         height: auto;
