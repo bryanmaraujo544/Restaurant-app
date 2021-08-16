@@ -18,10 +18,13 @@ const GlobalStyle = createGlobalStyle `
       @media(max-width: 768px){
         font-size: 8px;
       }
+      max-width: 100vw;
+      padding: 0;
     }
 
     body{
-      max-width: 100vw;
+      
+      margin: 0 auto;
       height: 100%;
       font-family: 'Poppins', sans-serif;
       background: ${theme.colors.background};

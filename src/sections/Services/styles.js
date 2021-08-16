@@ -20,6 +20,7 @@ export const Container = styled.section`
         @media screen and (max-width: ${props => props.theme.breakpoints["sm-screen"]}){
             flex-basis: 100%;
             order: 2;
+            margin-top: 32px;
         }
     }
 
@@ -37,6 +38,9 @@ export const Container = styled.section`
         .title {
             font-size: 4.2rem;
             color: ${props => props.theme.colors.primary};
+            @media screen and (max-width: ${props => props.theme.breakpoints.tablet}){
+                font-size: 3.6re
+            }
         }
 
         .description {

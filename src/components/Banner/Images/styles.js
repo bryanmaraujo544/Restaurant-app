@@ -12,7 +12,8 @@ export const Container = styled.div`
     }
 
     @media screen and (max-width: ${props => props.theme.breakpoints.mobile}){
-        margin-top: 72px;
+        margin-top: 96px;
+        z-index: 3;
     }
 
 
@@ -50,6 +51,7 @@ export const Container = styled.div`
     }
     .image{
         width: 80%;
+      
         img{
             width: 400px;
             border-radius: 50%50%;
