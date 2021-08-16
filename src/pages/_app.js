@@ -19,12 +19,13 @@ const GlobalStyle = createGlobalStyle `
         font-size: 8px;
       }
       max-width: 100vw;
+      margin: 0 auto;
+
       padding: 0;
     }
 
     body{
       
-      margin: 0 auto;
       height: 100%;
       font-family: 'Poppins', sans-serif;
       background: ${theme.colors.background};

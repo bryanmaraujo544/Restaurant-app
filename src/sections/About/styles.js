@@ -12,6 +12,10 @@ export const Container = styled.section`
     @media screen and (max-width: ${props => props.theme.breakpoints["sm-screen"]}){
         height: auto;
     }
+
+    @media screen and (max-width: ${props => props.theme.breakpoints.mobile}){
+        margin-top: 96px;
+    }
     .text {
         display: flex;
         flex-direction: column;
