@@ -59,6 +59,7 @@ export const SocialMedias= ({isNavBar}) => {
                     initial={{y: -100, opacity: 0}}
                     animate={{y:0, opacity: 1}}
                     
+                    
                 >
                     {social.map((item, i) => (
                         <div className={`social ${isNavBar ? 'navbar' : ''}`} key={i} >

@@ -16,7 +16,7 @@ export const Unities = () => {
                         image={unity.image}
                         home
                         key={i}
-                        link="/"
+                        link={unity.path}
                     />
                 ))}
             </div>

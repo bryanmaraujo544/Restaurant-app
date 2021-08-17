@@ -31,10 +31,19 @@ const GlobalStyle = createGlobalStyle `
       height: 100%;
       font-family: 'Poppins', sans-serif;
       overflow-x: hidden;
+      padding: 0 96px;
 
-      
+      @media screen and (max-width: 1366px){
+        padding: 0px 64px;
+      }
 
+      @media screen and (max-width: 768px){
+        padding: 0px 32px;
+      }
 
+      @media screen and (max-width: 480px){
+        padding: 0px 24px;
+      }
     }
 `
 

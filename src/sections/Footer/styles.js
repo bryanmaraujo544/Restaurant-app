@@ -4,6 +4,8 @@ export const Container = styled.footer`
     border-top: 1px solid #ddd;
     display: flex;
     flex-direction: column;
+    margin-top: 128px;
+    padding: 48px 96px;
 
     @media screen and (max-width: 1366px){
         padding: 48px 64px;

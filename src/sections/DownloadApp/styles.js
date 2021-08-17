@@ -22,15 +22,15 @@ export const Container = styled.section`
     }
 
     @media screen and (max-width: 1366px){
-        margin: 19.6rem 64px;
+        margin: 19.6rem 0;
     }
 
     @media screen and (max-width: 768px){
-        margin: 128px 32px;
+        margin: 128px 0;
     }
 
     @media screen and (max-width: 480px){
-        margin: 64px 24px;
+        margin: 64px 0;
     }
 
     .content {

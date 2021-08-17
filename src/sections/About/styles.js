@@ -14,15 +14,15 @@ export const Container = styled.section`
     }
     
     @media screen and (max-width: 1366px){
-        margin: 128px 64px;
+        margin: 128px 0px;
     }
 
     @media screen and (max-width: 768px){
-        margin: 128px 32px;
+        margin: 128px 0px;
     }
 
     @media screen and (max-width: 480px){
-        margin: 128px 24px;
+        margin: 128px 0px;
     }
 
     @media screen and (max-width: ${props => props.theme.breakpoints["sm-screen"]}){

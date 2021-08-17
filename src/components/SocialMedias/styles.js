@@ -11,6 +11,11 @@ export const Container = styled.div`
     }
     .social-medias{
         display: flex;
+        position: relative;
+        
+
+
+        
     }
 
     .social-medias-mobile {

@@ -1,5 +1,5 @@
 import { Container } from './styles'
-import { Link } from 'react-scroll'
+import Link from 'next/link'
 
 export const Button = ({
     second,
@@ -9,7 +9,7 @@ export const Button = ({
 }) => {
     return (
         <Container>
-            <Link to={link} smooth={true}>
+            <Link href={link} >
                 <a className={`button ${second ? 'second' : ''} ${small ? 'small' : ''}`}>
                     {text}
                 </a>
