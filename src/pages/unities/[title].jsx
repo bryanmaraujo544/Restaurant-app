@@ -16,7 +16,7 @@ const Unities = ({pageData}) => {
                 title="Você está na unidade"
                 unityName={data.title}
                 description={data.local}
-                
+                images={data.images}
                 firstBtnText="Cardápios"
                 secondBtnText="Sobre"
             />

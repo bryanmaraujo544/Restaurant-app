@@ -8,17 +8,7 @@ export const Container = styled.main`
         height: auto;
     }
     
-    @media screen and (max-width: 1366px){
-        padding: 0px 64px;
-    }
 
-    @media screen and (max-width: 768px){
-        padding: 0px 32px;
-    }
-
-    @media screen and (max-width: 480px){
-        padding: 0px 24px;
-    }
     .cards{
         display: flex;
         flex-wrap: wrap;
