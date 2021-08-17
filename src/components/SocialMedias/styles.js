@@ -11,34 +11,34 @@ export const Container = styled.div`
     }
     .social-medias{
         display: flex;
+    }
 
-        @media screen and (max-width: ${props => props.theme.breakpoints["tablet"]}){
-            display: flex;
-            flex-direction: column;
-
-            &.open {
-                display: flex;
-                position: absolute;
-                right: -8px;
-                top: 32px;
-                z-index: 7;
-                background: #fff;
-                border-radius: 9999px;
-                padding: 8px;
-            }
-        }
-
+    .social-medias-mobile {
+        display: flex;
+        flex-direction: column;
 
         
+        &.open {
+            display: flex;
+            position: absolute;
+            right: -8px;
+            top: 32px;
+            z-index: 7;
+            background: #fff;
+            border-radius: 9999px;
+            padding: 8px;
+        }
     }
     
     .social{
         & + .social {
             margin-left: 8px;
 
-            @media screen and (max-width: ${props => props.theme.breakpoints.tablet}){
-                margin-top: 4px;
-                margin-left: 0;
+            &.navbar {
+                @media screen and (max-width: ${props => props.theme.breakpoints.tablet}){
+                    margin-top: 4px;
+                    margin-left: 0;
+                }
             }
         }
         a{
@@ -58,7 +58,11 @@ export const Container = styled.div`
             }
 
             @media screen and (max-width: ${props => props.theme.breakpoints.tablet}){
-                display: none;
+                display: flex;
+
+                &.close {
+                    display: none;
+                }
 
                 &.open {
                     display: flex;

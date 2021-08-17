@@ -17,7 +17,7 @@ export const NavBar = () => {
       <MobileDrawer />
       <Logo />
       <ListNav />
-      <SocialMedias />
+      <SocialMedias isNavBar/>
     </Container>
   )
 }

@@ -36,8 +36,8 @@ const Container = styled.span`
         }
 
         .social-medias{
-            position: absolute;
-            bottom: 32px;
+            position: relative;
+            bottom: -32px;
         }
 
 
