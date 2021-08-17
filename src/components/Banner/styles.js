@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.section`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    height: 100%;
+    height: calc(100vh - 90px);
     position: relative;
     z-index: 4;
     
@@ -11,6 +11,8 @@ export const Container = styled.section`
     @media screen and (max-width: 966px){
         grid-template-columns: 1fr;
         margin-top: 0px;
+        height: auto;
+
     }
 
     @media screen and (max-width: ${props => props.theme.breakpoints.mobile}){

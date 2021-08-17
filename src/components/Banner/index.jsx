@@ -4,21 +4,36 @@ import { Titles } from './Titles'
 import { Images } from './Images'
 import { Grain } from 'components/Grain'
  
-export const Banner = ({title, description, uptitle, home}) => {
+export const Banner = ({
+    title, 
+    description, 
+    uptitle, 
+    home,
+    firstBtnText,
+    secondBtnText,
+    firtsBtnLink,
+    secondBtnLink,
+    unityName
+}) => {
     return (
         <Container>
             <Grain/>
             <div className="content">
                 <Titles
-                    home
-                    title="O carinho é o nosso ingrediente especial"
-                    description="Nossas delícias são feitas com toda dedicação e um cuidado artesanal que transformarão seu conceito culinário"
-                    uptitle="padaria e restaurante"
+                    home={home}
+                    title={title}
+                    unityName={unityName}
+                    description={description}
+                    uptitle={uptitle}
+                    firstBtnText={firstBtnText}
+                    secondBtnText={secondBtnText}
                 />
             </div>
-            <div className="images">
-                <Images />
-            </div>
+            {home && 
+                <div className="images">
+                    <Images />
+                </div>
+            }
         </Container>
     )
 }

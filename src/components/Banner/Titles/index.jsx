@@ -5,17 +5,23 @@ import { Button } from '../../Button'
 export const Titles = ({
     home,
     title,
+    unityName,
     description,
-    uptitle
+    uptitle,
+    firstBtnText,
+    secondBtnText
 }) => {
     return (
         <Container>
-            { home && <p className="uptitle">{uptitle}</p> }
+            <p className="uptitle">{uptitle}</p>
             <h1>{title}</h1>
+            {!home && 
+                <span>{unityName}</span>
+            }
             <h2>{description}</h2>
             <div className="buttons">
-                <Button text="Ver unidades" link="unities"/>
-                <Button second text="Sobre" link="about" />
+                <Button text={firstBtnText} link="unities"/>
+                <Button second text={secondBtnText} link="about" />
             </div>
             
         </Container>

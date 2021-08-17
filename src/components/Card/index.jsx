@@ -29,7 +29,7 @@ export const Card = ({home, title, endereco, image, link}) => {
                         second
                         small
                         link={link}
-                        
+                        external
                     />
                 </div>
            

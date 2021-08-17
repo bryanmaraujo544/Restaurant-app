@@ -6,6 +6,7 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    
 
     @media screen and (max-width: 966px){
         align-items: center;
@@ -14,6 +15,14 @@ export const Container = styled.div`
 
     .buttons{
         display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        margin-top: 32px;
+
+        @media screen and (max-width: 966px){
+            justify-content: center;
+        }
     }
 
     .uptitle{
@@ -21,10 +30,10 @@ export const Container = styled.div`
         border-radius: 9999px;
         color: ${props => props.theme.colors["second-text"]};
         font-size: 1.6rem;
-        margin-bottom: -12px;
+        margin-bottom: -20px;
     }
 
-    h1{
+    h1, span{
         font-size: 5.2rem;
         line-height: 1.25;
 
@@ -40,6 +49,12 @@ export const Container = styled.div`
         @media screen and (max-width: ${props => props.theme.breakpoints["mobile"]}){
             font-size: 4.2rem;
         }
+    }
+
+    span {
+        color: ${props => props.theme.colors.primary};
+        font-weight: 700;
+        margin-top: -12px;
     }
 
     h2{

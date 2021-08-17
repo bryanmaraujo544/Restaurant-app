@@ -5,7 +5,14 @@ export const Header = () => {
     return (
         <Container id="home">
             <NavBar />
-            <Banner />
+            <Banner 
+                title="O carinho é o nosso ingrediente especial"
+                description="Nossas delícias são feitas com toda dedicação e um cuidado artesanal que transformarão seu conceito culinário"
+                uptitle="padaria e restaurante"
+                firstBtnText="Ver unidades"
+                secondBtnText="Sobre"
+                home
+            />
         </Container>
     )
 }

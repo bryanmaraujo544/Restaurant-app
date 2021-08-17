@@ -1,20 +1,33 @@
-import { Container } from './styles'
+import { Container } from 'styles/UnitiesPage'
 import { NavBar } from 'components/NavBar'
 import { unitiesPageData } from 'data/unitiesPageData'
 import { Titles } from 'components/Banner/Titles'
+import { Banner } from 'components/Banner'
+
+
+
 const Unities = ({pageData}) => {
     const [data] = pageData
     return (
         <Container>
             <NavBar />
-            <Titles 
-                title={`Você está na unidade ${data.title}`}
+            <Banner 
+                uptitle={data.horario}
+                title="Você está na unidade"
+                unityName={data.title}
+                description={data.local}
+                
+                firstBtnText="Cardápios"
+                secondBtnText="Sobre"
             />
         </Container>
     )
 }
 
 export default Unities
+
+
+
 
 
 export const getStaticProps = ({params}) => {

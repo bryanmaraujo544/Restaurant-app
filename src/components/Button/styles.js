@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const Container= styled.span`
+    max-width: 210px;
     .button{
         display: flex;
         align-items: center;
