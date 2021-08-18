@@ -14,10 +14,10 @@ export const Titles = ({
     return (
         <Container>
             <p className="uptitle">{uptitle}</p>
-            <h1>{title}</h1>
-            {!home && 
+            <h1>{title}             {!home && 
                 <span>{unityName}</span>
-            }
+            }</h1>
+
             <h2>{description}</h2>
             <div className="buttons">
                 <Button text={firstBtnText} link="unities"/>

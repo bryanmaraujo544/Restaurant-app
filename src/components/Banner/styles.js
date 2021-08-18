@@ -69,7 +69,8 @@ export const Container = styled.section`
 
     .slider {
         grid-column: 2 / 3;
-        
+        width: 100%;
+
         display: flex;
         justify-content: center;
         align-items: center;
@@ -80,13 +81,14 @@ export const Container = styled.section`
         }
         
         .image {
-            max-width: 1020px;
             position: relative;
             border-radius: 32px;
+
             .img {
                 border-radius: 48px;
                 width: 720px;
-                height: auto
+                height: auto;
+             
             }
 
             

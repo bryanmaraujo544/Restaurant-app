@@ -13,6 +13,12 @@ export const Container = styled.div`
         text-align: center;
     }
 
+    @media screen and (max-width: ${props => props.theme.breakpoint.mobile}){
+        align-items: center;
+        text-align: center;
+        gap: 8px;
+    }
+
     .buttons{
         display: flex;
         justify-content: flex-start;

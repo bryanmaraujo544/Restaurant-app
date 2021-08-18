@@ -5,11 +5,12 @@ import { Titles } from 'components/Banner/Titles'
 import { Banner } from 'components/Banner'
 import { Cardapios } from 'sections/Cardapios'
 import { Footer } from 'sections'
-
+import { Map } from 'components/Map'
 
 
 const Unities = ({pageData}) => {
     const [data] = pageData
+    console.log(data.map)
     return (
         <Container>
             <NavBar />
@@ -25,7 +26,9 @@ const Unities = ({pageData}) => {
             <Cardapios 
                 cardapios={data.cardapios}
             />
+            <Map title={data.path}/>
             <Footer />
+            
         </Container>
     )
 }
