@@ -15,7 +15,7 @@ export const DownloadApp = () => {
                     Encontre nossos cardápios com as mais diferentes especialidades da casa no nosso app. Baixe já!
                 </p>
                 <div className="buttons">
-                    <Link href="">
+                    <Link href="https://apps.apple.com/br/app/a-quinta-do-marqu%C3%AAs/id1528384999?l=en">
                         <a  className="apple">
                             <FaApple className="apple-icon"/>
                             <div className="text">
@@ -25,7 +25,7 @@ export const DownloadApp = () => {
 
                         </a>
                     </Link>
-                    <Link href="">
+                    <Link href="https://play.google.com/store/apps/details?id=com.epadoca.quinta.marques">
                         <a  className="play">
                             <FaGooglePlay className="play-icon"/>
                             <div className="text">

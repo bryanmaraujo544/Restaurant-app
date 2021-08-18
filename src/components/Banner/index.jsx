@@ -23,7 +23,7 @@ export const Banner = ({
         } else if (current === images.length - 1){
             setCurrent(0)
         }
-    }, [current])
+    }, [current, images.length])
 
     const handlePrevious = useCallback(() => {
         if (current > 0){
@@ -31,7 +31,7 @@ export const Banner = ({
         } else if (current === 0) {
             setCurrent(images.length - 1)
         }
-    }, [current])
+    }, [current, images.length])
 
     return (
         <Container>
@@ -61,6 +61,7 @@ export const Banner = ({
                                 width={1280}
                                 objectFit="cover"
                                 className="img"
+                                alt="Image Divulgacional"
                         />
                         <div className="buttons">
                             <button
