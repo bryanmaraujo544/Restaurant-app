@@ -108,8 +108,8 @@ export const Container = styled.section`
                     box-shadow: 0 3px 12px ${props => props.theme.colors.shade};
 
                     @media screen and (max-width: ${props => props.theme.breakpoints.mobile}){
-                        width: 32px;
-                        height: 32px;
+                        width: 36px;
+                        height: 36px;
                     }
 
                     &:hover {
@@ -121,14 +121,14 @@ export const Container = styled.section`
                         margin-left: -21px;
 
                         @media screen and (max-width: ${props => props.theme.breakpoints.mobile}){
-                            margin-left: -16px;
+                            margin-left: -18px;
                         }
                     }
                     &:nth-child(2){
                         margin-right: -21px;
 
                         @media screen and (max-width: ${props => props.theme.breakpoints.mobile}){
-                            margin-right: -16px;
+                            margin-right: -18px;
                         }
                     }
                 }
