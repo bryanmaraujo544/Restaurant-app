@@ -5,10 +5,6 @@ export const Container = styled.section`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
-    @media screen and (max-width: ${props => props.theme.breakpoints.mobile}){
-        margin: 6.4rem 0;
-    }
     
     .cardapios {
         display: flex;
@@ -16,6 +12,5 @@ export const Container = styled.section`
         justify-content: center;
         gap: 24px;
         width: 100%;
-        
     }
 `

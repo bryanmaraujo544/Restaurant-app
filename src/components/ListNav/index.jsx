@@ -3,13 +3,13 @@ import { Container, ContainerMobile } from './styles'
 import { Link } from "react-scroll"
 import LinkN from 'next/link'
 
-export const ListNav = ({isMobile, home}) => {
+export const ListNav = ({isMobile, home, setMenu}) => {
     return (
         <>
             {isMobile ? 
                 <ContainerMobile>
                     {listNav.map((item, i) => (
-                        <li  key={i}>
+                        <li  key={i} onClick={() => setMenu(false)}>
                             {home ?
                                     <Link
                                     activeClass="active"
@@ -18,7 +18,9 @@ export const ListNav = ({isMobile, home}) => {
                                     smooth={true}
                                     duration={500}
                                     >
-                                        <a> 
+                                        <a
+                                            
+                                        > 
                                             {item.label}
                                         </a>
                                     </Link>

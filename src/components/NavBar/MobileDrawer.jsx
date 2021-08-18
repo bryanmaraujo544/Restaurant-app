@@ -59,7 +59,7 @@ export const MobileDrawer = () => {
                     <div className="close" onClick={() => setIsOpen((prevState) => !prevState)}>
                         <IoClose size="24px" />
                     </div>
-                    <ListNav isMobile/>
+                    <ListNav isMobile setMenu={setIsOpen}/>
                     <SocialMedias/>
                 </motion.div>
             )}
