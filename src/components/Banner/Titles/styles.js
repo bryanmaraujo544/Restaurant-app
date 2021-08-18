@@ -18,7 +18,7 @@ export const Container = styled.div`
         justify-content: flex-start;
         align-items: center;
         width: 100%;
-        margin-top: 32px;
+        margin-top: 16px;
 
         @media screen and (max-width: 966px){
             justify-content: center;

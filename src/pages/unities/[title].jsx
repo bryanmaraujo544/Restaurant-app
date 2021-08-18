@@ -3,6 +3,7 @@ import { NavBar } from 'components/NavBar'
 import { unitiesPageData } from 'data/unitiesPageData'
 import { Titles } from 'components/Banner/Titles'
 import { Banner } from 'components/Banner'
+import { Cardapios } from 'sections/Cardapios'
 
 
 
@@ -19,6 +20,9 @@ const Unities = ({pageData}) => {
                 images={data.images}
                 firstBtnText="Cardápios"
                 secondBtnText="Sobre"
+            />
+            <Cardapios 
+                cardapios={data.cardapios}
             />
         </Container>
     )

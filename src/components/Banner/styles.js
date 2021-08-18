@@ -107,9 +107,9 @@ export const Container = styled.section`
                     height: 42px;
                     box-shadow: 0 3px 12px ${props => props.theme.colors.shade};
 
-                    @media screen and (max n           -width: ${props => props.theme.breakpoints.mobile}){
-                        width: 24px;
-                        height: 24px;
+                    @media screen and (max-width: ${props => props.theme.breakpoints.mobile}){
+                        width: 32px;
+                        height: 32px;
                     }
 
                     &:hover {

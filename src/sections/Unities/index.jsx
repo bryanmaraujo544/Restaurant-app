@@ -17,6 +17,8 @@ export const Unities = () => {
                         home
                         key={i}
                         link={unity.path}
+                        btnText="Ver serviços"
+                        second
                     />
                 ))}
             </div>

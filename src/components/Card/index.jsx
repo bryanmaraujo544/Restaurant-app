@@ -2,7 +2,15 @@ import { Container } from './styles'
 import Image from 'next/image'
 import { Button } from '../Button'
 
-export const Card = ({home, title, endereco, image, link}) => {
+export const Card = ({
+    home, 
+    title, 
+    endereco, 
+    image, 
+    link, 
+    btnText,
+    second
+}) => {
     return (
         <Container>
                 <div className="image">
@@ -25,8 +33,8 @@ export const Card = ({home, title, endereco, image, link}) => {
                         </p>
                     }
                     <Button 
-                        text="Ver serviços"
-                        second
+                        text={btnText}
+                        second={second}
                         small
                         link={link}
                         external
