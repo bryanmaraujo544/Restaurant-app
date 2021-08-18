@@ -2,7 +2,7 @@
 export const listNav = [
     {
         label: "Home",
-        path: "home"
+        path: "/"
     },
     {
         label: "Unidades",

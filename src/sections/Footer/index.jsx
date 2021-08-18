@@ -4,9 +4,10 @@ import { unitiesData } from 'sections/Unities/unitiesData'
 import { SocialMedias } from 'components/SocialMedias'
 import LinkNext from 'next/link'
 import { Link } from 'react-scroll'
+import LinkN from 'next/link'
 
 
-export const Footer = () => {
+export const Footer = ({home}) => {
     return (
         <Container id="contact">
            <div className="content">
@@ -25,11 +26,21 @@ export const Footer = () => {
                     <ul className="content-list">
                         {listNav.map(({label, path}, i) => (
                             <li key={i}>
-                                <Link to={`${path}`} smooth={true} duration={500}>
-                                    <a>
-                                        {label}
-                                    </a>
-                                </Link>
+                                {home ?
+                                        <Link to={`${path}`} smooth={true} duration={500}>
+                                            <a>
+                                                {label}
+                                            </a>
+                                        </Link>
+                                    :
+                                        <LinkN
+                                            href={`/#${path}`}
+                                        >
+                                            <a>
+                                                {label}
+                                            </a>
+                                        </LinkN>
+                                }
                                 
                             </li>
                         ))}

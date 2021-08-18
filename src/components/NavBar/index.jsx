@@ -11,12 +11,12 @@ import { MobileDrawer } from './MobileDrawer';
 
 
 
-export const NavBar = () => {
+export const NavBar = ({home}) => {
   return (
     <Container>
       <MobileDrawer />
       <Logo />
-      <ListNav />
+      <ListNav home={home}/>
       <SocialMedias isNavBar/>
     </Container>
   )

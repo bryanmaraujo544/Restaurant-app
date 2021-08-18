@@ -12,14 +12,18 @@ export const Container = styled.ul`
             margin-left: 32px;
         }
 
-        font-size: 1.8rem;
-        font-weight: 700;
-        color: ${props => props.theme.colors.text};
-        cursor: pointer;
-        transition: .1s;
-
-        &:hover{
-            color: ${props => props.theme.colors.primary};
+        a {
+    
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: ${props => props.theme.colors.text};
+            cursor: pointer;
+            transition: .1s;
+    
+            &:hover{
+                color: ${props => props.theme.colors.primary};
+    
+            }
 
         }
     }

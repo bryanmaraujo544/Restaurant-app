@@ -13,7 +13,7 @@ export default function Home() {
       <Services/>
       <About />
       <DownloadApp />
-      <Footer />
+      <Footer home/>
     </>
   )
 }

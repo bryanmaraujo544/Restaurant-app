@@ -7,7 +7,7 @@ export const Container = styled.section`
     align-items: flex-start;
 
     @media screen and (max-width: ${props => props.theme.breakpoints.mobile}){
-        margin: 64rem;
+        margin: 6.4rem 0;
     }
     
     .cardapios {
@@ -16,5 +16,6 @@ export const Container = styled.section`
         justify-content: center;
         gap: 24px;
         width: 100%;
+        
     }
 `
