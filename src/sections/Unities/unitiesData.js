@@ -15,7 +15,7 @@ export const unitiesData = [
         title: 'Faria Lima',
         endereco: 'Av. Brig. Faria Lima, 1853 SP',
         image: '/Faria-Lima.png',
-        path: '/unities/faria-fima'
+        path: '/unities/faria-lima'
     },
     {
         title: 'Paulista',
