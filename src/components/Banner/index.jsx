@@ -1,11 +1,8 @@
 import { useCallback, useState } from 'react'
 import { Container } from './styles'
-import Link from 'next/link'
 import { Titles } from './Titles'
 import { Images } from './Images'
 import { Grain } from 'components/Grain'
-import { ButtonGroup } from 'components/ButtonGroup'
-import Carousel from 'react-multi-carousel'
 import Image from 'next/image'
 import { BiChevronLeft, BiChevronRight } from 'react-icons/bi'
  

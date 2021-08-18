@@ -37,6 +37,10 @@ export const Container = styled.div`
         color: ${props => props.theme.colors["second-text"]};
         font-size: 1.6rem;
         margin-bottom: -20px;
+
+        @media screen and (max-width: ${props => props.theme.breakpoints["mobile"]}){
+            margin-bottom: -8px;
+        }
     }
 
     h1, span{
