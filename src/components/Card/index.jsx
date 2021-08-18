@@ -24,7 +24,7 @@ export const Card = ({
                     />
                 </div>
                 <div className="infos">
-                    <p className="title">
+                    <p className={`title ${home ? '' : 'margin'}`}>
                         {title}
                     </p>
                     {home && 

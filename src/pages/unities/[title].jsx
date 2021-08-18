@@ -4,6 +4,7 @@ import { unitiesPageData } from 'data/unitiesPageData'
 import { Titles } from 'components/Banner/Titles'
 import { Banner } from 'components/Banner'
 import { Cardapios } from 'sections/Cardapios'
+import { Footer } from 'sections'
 
 
 
@@ -24,6 +25,7 @@ const Unities = ({pageData}) => {
             <Cardapios 
                 cardapios={data.cardapios}
             />
+            <Footer />
         </Container>
     )
 }

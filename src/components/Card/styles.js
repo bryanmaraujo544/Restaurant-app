@@ -40,6 +40,10 @@ export const Container = styled.div`
         .title {
             font-weight: 700;
             font-size: 2.2rem;
+
+            &.margin {
+                margin-bottom: 8px;
+            }
         }
 
         .endereco {
