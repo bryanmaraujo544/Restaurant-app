@@ -4,5 +4,6 @@ import { Services } from "./Services";
 import { About } from "./About";
 import { DownloadApp } from "./DownloadApp";
 import { Footer } from "./Footer";
+import { ServicesOffer } from "./ServicesOffer";
 
-export { Header, Unities, Services, About, DownloadApp, Footer }
+export { Header, Unities, Services, ServicesOffer, About, DownloadApp, Footer }

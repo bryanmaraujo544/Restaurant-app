@@ -22,4 +22,11 @@ export const Container = styled.h3`
         
     }
 
+    &.center {
+        &:after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
 `

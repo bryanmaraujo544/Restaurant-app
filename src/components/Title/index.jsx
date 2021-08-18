@@ -1,8 +1,8 @@
 import { Container } from './styles'
 
-export const Title = ({ title }) => {
+export const Title = ({ title, center }) => {
     return (
-        <Container>
+        <Container className={`${center ? 'center' : ''}`}>
             {title}
         </Container>
 

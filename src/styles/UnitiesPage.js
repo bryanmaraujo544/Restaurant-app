@@ -23,7 +23,7 @@ export const Container = styled.main`
             }
 
             @media screen and (max-width: ${props => props.theme.breakpoints.mobile}){
-                margin-bottom: 2.4rem;
+                margin-bottom: 1.6rem;
             }
 
             &:after {
