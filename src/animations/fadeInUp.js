@@ -12,8 +12,10 @@ export const fadeInUp = {
     animate: i => ({
         y: 0,
         opacity: 1,
-        transition: { 
-            delay: i * 0.25
+        transition: {
+            duration: 0.4,
+            delay: i * 0.25,
+            type: "tween"
         }
     })
 }
