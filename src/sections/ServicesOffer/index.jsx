@@ -1,9 +1,10 @@
 import { Container } from './styles'
 import { Title } from 'components/Title'
 import { servicesData } from './data'
-import { useCallback, useState } from 'react'
+import { useCallback, useState, useRef, useEffect } from 'react'
 import Image from 'next/image'
-import { motion } from 'framer-motion'
+import { useAnimation, motion } from "framer-motion"
+
 
 export const ServicesOffer = () => {
     const [whatIsActive, setWhatIsActive] = useState(servicesData[0]) 
@@ -14,8 +15,22 @@ export const ServicesOffer = () => {
         const [active] = servicesData.filter((item) => item.title === title)
         setWhatIsActive(active)
     }, [whatIsActive, servicesData])
+
+    // Scroll Animation
+    const controls = useAnimation()
+    const ref = useRef(null)
+    useEffect(() => {
+        const sectionTop = ref.current.offsetTop;
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > sectionTop - window.innerHeight / 2) {
+                controls.start({y: 0, opacity: 1})
+            } else {
+                controls.start({y: 100, opacity: 0})
+            } 
+        })
+    }, [])
     return (
-        <Container>
+        <Container as={motion.section}  ref={ref} animate={controls}>
             <Title 
                 title="Serviços oferecidos"
                 center

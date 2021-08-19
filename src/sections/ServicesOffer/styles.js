@@ -7,10 +7,15 @@ export const Container = styled.section`
     align-items: center;
     
     margin-top: 172px;
-    margin-bottom: 172px;
+    margin-bottom: 300px;
+
+    @media screen and (max-width: ${props => props.theme.breakpoints["tablet"]}){
+        margin-bottom: 172px;
+    }
 
     @media screen and (max-width: ${props => props.theme.breakpoints["mobile"]}){
         margin-top: 64px;
+        margin-bottom: 64px;
     }
 
     .buttons {
@@ -105,7 +110,7 @@ export const Container = styled.section`
             
             img {
                 border-radius: 32px;
-                background-color: green;
+                background-color: ${props => props.theme.colors.primary};
                 flex-basis: 30%;
 
                 @media screen and (max-width: ${props => props.theme.breakpoints["mobile"]}){

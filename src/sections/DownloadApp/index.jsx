@@ -2,11 +2,26 @@ import { Container } from "./styles"
 import Link from 'next/link'
 import Image from 'next/image'
 import { FaGooglePlay, FaApple } from "react-icons/fa";
+import { useAnimation, motion } from "framer-motion"
+import { useRef, useEffect } from "react"
 
 
 export const DownloadApp = () => {
+    const controls = useAnimation()
+    const ref = useRef(null)
+   
+    useEffect(() => {
+        const sectionTop = ref.current.offsetTop;
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > sectionTop - window.innerHeight / 2) {
+                controls.start({y: 0, opacity: 1})
+            } else {
+                controls.start({y: 200, opacity: 0})
+            } 
+        })
+    }, [])
     return (
-        <Container>
+        <Container as={motion.section} animate={controls} ref={ref}>
             <div className="content">
                 <h4 className="title">
                     Faça o download agora do nosso aplicativo e aproveite nossas delícias

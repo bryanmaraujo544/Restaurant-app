@@ -1,14 +1,30 @@
 import { Container } from 'styles/UnitiesPage'
 import { NavBar } from 'components/NavBar'
 import { unitiesPageData } from 'data/unitiesPageData'
-import { Titles } from 'components/Banner/Titles'
+
 import { Banner } from 'components/Banner'
 import { Cardapios } from 'sections/Cardapios'
 import { Footer } from 'sections'
 import { MapImage } from 'components/MapImage'
+import { useAnimation,motion } from "framer-motion"
+import { useRef, useEffect } from "react"
 
 const Unities = ({pageData}) => {
     const [data] = pageData
+
+    const controls = useAnimation()
+    const ref = useRef(null)
+   
+    useEffect(() => {
+        const sectionTop = ref.current.offsetTop;
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > sectionTop - window.innerHeight / 2) {
+                controls.start({y: 0, opacity: 1})
+            } else {
+                controls.start({y: 200, opacity: 0})
+            } 
+        })
+    }, [])
  
     return (
         <Container>
@@ -20,12 +36,13 @@ const Unities = ({pageData}) => {
                 description={data.local}
                 images={data.images}
                 firstBtnText="Cardápios"
-                secondBtnText="Sobre"
+                secondBtnText="Localização"
             />
             <Cardapios 
                 cardapios={data.cardapios}
+                
             />
-            <div className="localizacao">
+            <motion.div className="localizacao" id="about" animate={controls} ref={ref}>
                 <h4 className="title">Como chegar</h4>
                 <div className="content">
                     <div className="text">
@@ -53,7 +70,7 @@ const Unities = ({pageData}) => {
                     </div>
                     
                 </div>
-            </div>
+            </motion.div>
             
             <Footer />
             

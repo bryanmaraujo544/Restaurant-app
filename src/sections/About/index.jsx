@@ -1,9 +1,24 @@
 import { Container } from './styles'
 import Image from 'next/image'
+import { useAnimation, motion } from "framer-motion"
+import { useRef, useEffect } from "react"
 
 export const About = () => {
+    const controls = useAnimation()
+    const ref = useRef(null)
+   
+    useEffect(() => {
+        const sectionTop = ref.current.offsetTop;
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > sectionTop - window.innerHeight / 2) {
+                controls.start({y: 0, opacity: 1})
+            } else {
+                controls.start({y: 200, opacity: 0})
+            } 
+        })
+    }, [])
     return (
-        <Container id="about">
+        <Container id="about" as={motion.section} animate={controls} ref={ref}>
             <div className="text">
                 <h4 className="title">
                     Conheça um pouco da nossa história
