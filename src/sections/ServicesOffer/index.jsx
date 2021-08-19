@@ -3,6 +3,7 @@ import { Title } from 'components/Title'
 import { servicesData } from './data'
 import { useCallback, useState } from 'react'
 import Image from 'next/image'
+import { motion } from 'framer-motion'
 
 export const ServicesOffer = () => {
     const [whatIsActive, setWhatIsActive] = useState(servicesData[0]) 
@@ -21,33 +22,39 @@ export const ServicesOffer = () => {
             />
             <div className="buttons">
                 {servicesData.map(({title}, i) => (
-                    <button 
+                    <motion.button 
                         className={`button ${title === whatIsActive.title ? 'active' : ''}`}
                         onClick={() => handleActive(title)}
                         key={i}
+                        whileHover={{scale: 1.05}}
+                        whileTap={{scale: 0.95}}
                     >
                         {title}
-                    </button>
+                    </motion.button>
                 ))}
             </div>
             <div className="box">
                 <div className="text">
+                    <h5>{whatIsActive.title}</h5>
                     {whatIsActive.content.map((text, i) => (
                         <p key={i}>{text}</p>
                     ))}
                 </div>
-                <div className="images">
+                <motion.div 
+                    className="images"
+                    
+                >
                     {whatIsActive.images.map((image, i) => (
                         <Image 
                             src={image}
                             width={400}
-                            height={400}
-                            objectFit="contain"
+                            height={225}
+                            objectFit="cover"
                             alt="Services Image"
                             key={i}
                         />
                     ))}
-                </div>
+                </motion.div>
             </div>
         </Container>
     )
