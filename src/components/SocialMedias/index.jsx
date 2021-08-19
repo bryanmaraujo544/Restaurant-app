@@ -17,7 +17,7 @@ const social = [
     // },
     {
         icon: <SiIfood/>,
-        href: "https://www.instagram.com/aquintadomarques_oficial/"
+        href: "https://www.ifood.com.br/delivery/sao-paulo-sp/quinta-do-marques---sao-paulo---padaria-jardim-paulistano/3951dd34-e0f7-4a6e-916f-c5629fa8dc77"
     },
     {
         icon: <FaWhatsapp/>,
