@@ -10,7 +10,7 @@ export const Container = styled.section`
     margin-bottom: 300px;
 
     @media screen and (max-width: ${props => props.theme.breakpoints["tablet"]}){
-        margin-bottom: 172px;
+        margin-bottom: 256px;
     }
 
     @media screen and (max-width: ${props => props.theme.breakpoints["mobile"]}){
