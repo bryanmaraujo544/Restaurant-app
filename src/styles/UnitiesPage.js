@@ -1,10 +1,12 @@
 import styled from 'styled-components'
 
 export const Container = styled.main`
-    height: calc(100vh - 90px);
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+
 
     .localizacao {
         width: 100%;
@@ -12,6 +14,8 @@ export const Container = styled.main`
         align-items: center;
         flex-direction: column;
         margin-top: 96px;
+
+
         .title {
             font-size: 3.6rem;
             margin-bottom: 64px;
@@ -23,7 +27,7 @@ export const Container = styled.main`
             }
 
             @media screen and (max-width: ${props => props.theme.breakpoints.mobile}){
-                margin-bottom: 1.6rem;
+                margin-bottom: -2.4rem;
             }
 
             &:after {
@@ -68,6 +72,7 @@ export const Container = styled.main`
 
                 .endereco {
                     font-size: 2.4rem;
+                    text-align: center;
 
                     @media screen and (max-width: ${props => props.theme.breakpoints.mobile}){
                         font-size: 2.0rem;

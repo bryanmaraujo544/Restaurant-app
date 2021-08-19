@@ -3,8 +3,11 @@ import styled from 'styled-components'
 export const Container = styled.section`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    height: calc(100vh - 90px);
+    height: calc(100vh - 100px);
+   
     position: relative;
+    width: 100%;
+ 
     z-index: 4;
 
     
