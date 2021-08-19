@@ -23,9 +23,9 @@ export const ServicesOffer = () => {
         const sectionTop = ref.current.offsetTop;
         window.addEventListener('scroll', () => {
             if (window.pageYOffset > sectionTop - window.innerHeight / 2) {
-                controls.start({y: 0, opacity: 1, duration: 0.5, transition: {duration: 0.4, type: "tween"}})
+                controls.start({y: 0, opacity: 1, duration: 0.5, transition: {duration: 0.4, type: "spring"}})
             } else {
-                controls.start({y: 100, opacity: 0, duration: 0.5, transition: {duration: 0.4, type: "tween"}})
+                controls.start({y: 100, opacity: 0, duration: 0.5, transition: {duration: 0.4, type: "spring"}})
             } 
         })
     }, [])

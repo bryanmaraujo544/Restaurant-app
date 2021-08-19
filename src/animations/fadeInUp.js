@@ -5,7 +5,7 @@ export const fadeInUp = {
         transition: { duration: 0.5 }
     },
     initial: {
-        y: 60,
+        y: 150,
         opacity: 0,
         transition: { duration: 0.5 }
     }, 
@@ -13,7 +13,7 @@ export const fadeInUp = {
         y: 0,
         opacity: 1,
         transition: {
-            duration: 0.4,
+            duration: 0.3,
             delay: i * 0.25,
             type: "tween"
         }
