@@ -5,6 +5,9 @@ import { Images } from './Images'
 import { Grain } from 'components/Grain'
 import Image from 'next/image'
 import { BiChevronLeft, BiChevronRight } from 'react-icons/bi'
+import { motion } from 'framer-motion'
+import { fadeInUp } from 'animations/fadeInUp'
+
  
 export const Banner = ({
     title, 
@@ -48,12 +51,12 @@ export const Banner = ({
                 />
             </div>
             {home && 
-                <div className="images">
+                <motion.div variants={fadeInUp} animate="animate" initial="initial" exit="exit" custom={1} className="images">
                     <Images />
-                </div>
+                </motion.div>
             }
             {!home && 
-                <div className="slider">
+                <motion.div  variants={fadeInUp} animate="animate" initial="initial" exit="exit" custom={1}className="slider">
                     <div className="image">
                         <Image 
                                 src={images[current]}
@@ -80,7 +83,7 @@ export const Banner = ({
                             </button>
                         </div>
                     </div>
-                </div>
+                </motion.div>
 
 
             

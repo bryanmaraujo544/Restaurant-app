@@ -6,6 +6,7 @@ export const Container = styled.footer`
     flex-direction: column;
     margin-top: 128px;
     padding: 48px 96px;
+    width: 100%;
 
     @media screen and (max-width: 1366px){
         padding: 48px 64px;

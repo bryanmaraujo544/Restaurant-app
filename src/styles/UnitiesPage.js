@@ -6,8 +6,6 @@ export const Container = styled.main`
     flex-direction: column;
     align-items: center;
 
-
-
     .localizacao {
         width: 100%;
         display: flex;
@@ -80,17 +78,14 @@ export const Container = styled.main`
                 }
                 
                 .map-image {
-                /* position: absolute;
-                left: 50%;
-                transform: translateX(-50%); */
-                width: 200px;
-                position: absolute;
-                bottom: 0;
+                    width: 200px;
+                    position: relative;
+                    bottom: 0;
 
-                @media screen and (max-width: ${props => props.theme.breakpoints["tablet"]}){
-                    display: none;
+                    @media screen and (max-width: ${props => props.theme.breakpoints["tablet"]}){
+                        display: none;
+                    }
                 }
-            }
             
             }
             .map {

@@ -1,5 +1,7 @@
 import { Container } from './styles'
 import { Button } from '../../Button'
+import { motion } from 'framer-motion'
+import { fadeInUp } from 'animations/fadeInUp'
 
 
 export const Titles = ({
@@ -13,16 +15,16 @@ export const Titles = ({
 }) => {
     return (
         <Container>
-            <p className="uptitle">{uptitle}</p>
-            <h1>{title}             {!home && 
+            <motion.p variants={fadeInUp} animate="animate" initial="initial" exit="exit" custom={1} className="uptitle">{uptitle}</motion.p>
+            <motion.h1 variants={fadeInUp} animate="animate" initial="initial" exit="exit" custom={1.5}>{title}             {!home && 
                 <span>{unityName}</span>
-            }</h1>
+            }</motion.h1>
 
-            <h2>{description}</h2>
-            <div className="buttons">
+            <motion.h2 variants={fadeInUp} animate="animate" initial="initial" exit="exit" custom={1.75}>{description}</motion.h2>
+            <motion.div variants={fadeInUp} animate="animate" initial="initial" exit="exit" custom={2} className="buttons">
                 <Button text={firstBtnText} link="unities"/>
                 <Button second text={secondBtnText} link="about" />
-            </div>
+            </motion.div>
             
         </Container>
     )
