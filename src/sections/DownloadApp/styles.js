@@ -45,7 +45,7 @@ export const Container = styled.section`
         }
 
         @media screen and (max-width: ${props => props.theme.breakpoints.mobile}){
-            padding: 32px;
+            padding: 24px;
 
         }
 
@@ -99,12 +99,17 @@ export const Container = styled.section`
                 margin-right: 16px;
                 box-shadow: 0 3px 12px ${props => props.theme.colors['sm-shade']};
 
+                @media screen and (max-width: ${props => props.theme.breakpoints.mobile}){
+                    margin-right: 12px;
+                }
+
                 .apple-icon {
                     font-size: 32px;
                     margin-right: 8px;
 
                     @media screen and (max-width: ${props => props.theme.breakpoints.mobile}){
                         font-size: 2.4rem;
+                        margin-right: 4px;
                     }
                 }
             }
@@ -120,6 +125,8 @@ export const Container = styled.section`
 
                     @media screen and (max-width: ${props => props.theme.breakpoints.mobile}){
                         font-size: 2.0rem;
+                        margin-right: 4px;
+
                     }
                 }
             }

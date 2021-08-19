@@ -10,12 +10,12 @@ export const Container = styled.section`
     margin-bottom: 300px;
 
     @media screen and (max-width: ${props => props.theme.breakpoints["tablet"]}){
-        margin-bottom: 256px;
+        margin-bottom: 172px;
     }
 
     @media screen and (max-width: ${props => props.theme.breakpoints["mobile"]}){
         margin-top: 172px;
-        margin-bottom: 64px;
+        margin-bottom: 196px;
     }
 
     .buttons {
@@ -60,7 +60,8 @@ export const Container = styled.section`
         }
 
         @media screen and (max-width: ${props => props.theme.breakpoints["mobile"]}){
-            padding: 24px;                   
+            padding: 24px;
+            height: 480px;    
         }
 
         .text {
@@ -103,9 +104,9 @@ export const Container = styled.section`
             }
             
             @media screen and (max-width: ${props => props.theme.breakpoints["mobile"]}){
-                bottom: -128px; 
+                bottom: -102px; 
                 flex-wrap: wrap;
-
+                gap: 8px;
             }
             
             img {

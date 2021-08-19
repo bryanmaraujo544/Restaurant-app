@@ -11,9 +11,9 @@ export const About = () => {
         const sectionTop = ref.current.offsetTop;
         window.addEventListener('scroll', () => {
             if (window.pageYOffset > sectionTop - window.innerHeight / 2) {
-                controls.start({y: 0, opacity: 1, transition: {duration: 0.3}})
+                controls.start({y: 0, opacity: 1, transition: {duration: 0.15}})
             } else {
-                controls.start({y: 200, opacity: 0, transition: {duration: 0.3}})
+                controls.start({y: 130, opacity: 0, transition: {duration: 0.15}})
             } 
         })
     }, [])
