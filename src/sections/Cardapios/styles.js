@@ -8,7 +8,7 @@ export const Container = styled.section`
     width: 100%;
 
     @media screen and (max-width: ${props => props.theme.breakpoints.tablet}) {
-        margin-top: 82px;
+        margin-top: 104px;
         margin-bottom: 0;
     }
     
