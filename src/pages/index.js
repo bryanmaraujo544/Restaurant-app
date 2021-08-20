@@ -1,13 +1,11 @@
-import Head from 'next/head'
-import Image from 'next/image'
-
 import { Header, Unities, Services, About, DownloadApp, Footer, ServicesOffer } from 'sections'
-
+import SEO from 'components/SEO'
 
 
 export default function Home() {
   return (
     <>
+      <SEO />
       <Header />
       <Unities /> 
       <Services/>

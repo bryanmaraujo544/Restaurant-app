@@ -1,7 +1,7 @@
+import SEO from 'components/SEO'
 import { Container } from 'styles/UnitiesPage'
 import { NavBar } from 'components/NavBar'
 import { unitiesPageData } from 'data/unitiesPageData'
-
 import { Banner } from 'components/Banner'
 import { Cardapios } from 'sections/Cardapios'
 import { Footer } from 'sections'
@@ -28,6 +28,10 @@ const Unities = ({pageData}) => {
  
     return (
         <Container>
+            <SEO 
+                title={data.title}
+                description={`${data.horario} - ${data.local}`}
+            />
             <NavBar />
             <Banner 
                 uptitle={data.horario}
