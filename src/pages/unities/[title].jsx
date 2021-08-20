@@ -29,7 +29,7 @@ const Unities = ({pageData}) => {
     return (
         <Container>
             <SEO 
-                title={data.title}
+                title={`Unidade - ${data.title} | A quinta do Marquês`}
                 description={`${data.horario} - ${data.local}`}
             />
             <NavBar />
