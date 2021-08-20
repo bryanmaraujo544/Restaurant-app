@@ -1,3 +1,8 @@
+# Live Application
+
+![RestaurantGif(1)](https://user-images.githubusercontent.com/62571814/130250041-179acac9-e8ad-4a8a-9e70-2fbfc39f82ba.gif)
+
+
 This is an application developed by Bryan Martins(me) for a company wich has a restaurant chain. 
 
 ## How it is works
