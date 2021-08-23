@@ -76,6 +76,24 @@ export const Container = styled.main`
                         font-size: 2.0rem;
                     }
                 }
+
+                .waze {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 2.4rem;
+                    
+
+                    p {
+                        font-size: 1.2rem;
+                    }
+
+                    a {
+                        color: ${props => props.theme.colors.text};
+                       
+                    }
+                }
                 
                 .map-image {
                     width: 200px;

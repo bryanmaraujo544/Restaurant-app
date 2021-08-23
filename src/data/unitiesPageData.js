@@ -38,6 +38,7 @@ export const unitiesPageData = [
                 image: '/Pizzas.jpg'
             },
         ],
+        linkWaze: "https://ul.waze.com/ul?place=ChIJDUXt6qGJxpQRENNq2IlcYNw&ll=-23.23411630%2C-48.13878660&navigate=yes&utm_campaign=waze_website&utm_source=waze_website&utm_medium=lm_share_location"
     },
     {
         title: 'Alphaville',
@@ -73,7 +74,8 @@ export const unitiesPageData = [
                 image: '/Copa.jpg'
             },
 
-        ]
+        ],
+        linkWaze: "https://ul.waze.com/ul?place=ChIJvf5MVE0Cz5QRNC56tV4HvUY&ll=-23.48458540%2C-46.86263870&navigate=yes&utm_campaign=waze_website&utm_source=waze_website&utm_medium=lm_share_location"
     },
     {
         title: 'Faria Lima',
@@ -109,8 +111,8 @@ export const unitiesPageData = [
                 image: '/Copa.jpg'
             },
 
-        ]
-
+        ],
+        linkWaze: "https://ul.waze.com/ul?place=ChIJx1t_QHNXzpQR4NJpzZO1sWA&ll=-23.57335540%2C-46.68883270&navigate=yes&utm_campaign=waze_website&utm_source=waze_website&utm_medium=lm_share_location"
     },
     {
         title: 'Paulista',    
@@ -141,7 +143,7 @@ export const unitiesPageData = [
                 image: '/Copa.jpg'
             },
         ],
-
+        linkWaze: "https://www.waze.com/pt-BR/live-map/directions/brasil/sao-paulo/alameda-min.-rocha-azevedo,-251?place=ChIJecqR0s1ZzpQRIQY9VU92JPQ&utm_campaign=waze_website&utm_medium=website_menu&utm_source=waze_website"
     },
     {
         title: 'Campinas',
@@ -177,6 +179,7 @@ export const unitiesPageData = [
                 image: '/Copa.jpg'
             },
 
-        ]
+        ],
+        linkWaze: "https://ul.waze.com/ul?place=ChIJa7Bh7iX9zpQRtiLOR4kpa7g&ll=-23.42194590%2C-46.79254310&navigate=yes&utm_campaign=waze_website&utm_source=waze_website&utm_medium=lm_share_location"
     },
 ]
