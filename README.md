@@ -20,11 +20,11 @@ With **getStaticPaths** I created the paths of the pages depending of the title 
 ## Technologies and dependencies
 
 - React
-- React Dom
-- Next
+- NextJs
 - Styled Components
 - Framer Motion
 - React-scroll
+- React-icons
 
 ## View application
 
