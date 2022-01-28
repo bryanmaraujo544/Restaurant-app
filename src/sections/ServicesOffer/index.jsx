@@ -8,8 +8,7 @@ import { useAnimation, motion } from "framer-motion"
 
 export const ServicesOffer = () => {
     const [whatIsActive, setWhatIsActive] = useState(servicesData[0]) 
-    console.log(whatIsActive)
-
+    
     const handleActive = useCallback((title) => {
         // Catch the object of the services data that the title is equal to the title of the button wich was clicked
         const [active] = servicesData.filter((item) => item.title === title)

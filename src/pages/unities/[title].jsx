@@ -90,7 +90,6 @@ export default Unities
 export const getStaticProps = ({params}) => {
     const title = params.title;
     const pageData = unitiesPageData.filter(item => title === item.path)
-    console.log("pagesData",pageData)
     return {
         props: {
             pageData

@@ -38,7 +38,7 @@ export const Services = () => {
     useEffect(() => {
         const sectionTop = ref.current.offsetTop;
         window.addEventListener('scroll', () => {
-            if (window.pageYOffset > sectionTop - window.innerHeight / 2) {
+            if (window.pageYOffset > sectionTop - window.innerHeight / 1.2) {
                 controls.start({y: 0, opacity: 1, transition: {duration: 0.15}})
             } else {
                 controls.start({y: 120, opacity: 0, transition: {duration: 0.15}})
